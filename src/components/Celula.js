@@ -13,7 +13,7 @@ function Celula({texto, aoClicarNaCelula}) {
         }
       }}
     >
-      <span>{text}</span>
+      <span className="conteudo-celula">{text}</span>
     </div>
   )
 }

@@ -8,7 +8,7 @@ function win() {
 
   // linhas:
   for(let i=0; i<=6; i+=3){
-    if(array[i]===array[i+1] && array[i]===array[i+2] && array[i]!==""){
+    if(array[i]===array[i+1] && array[i]===array[i+2] && array[i]!=="" && array[i+1]!=="" && array[i+2]!=="" ){
       return {
         haVencedor:true,
         vencedor: array[i]
@@ -34,10 +34,10 @@ function win() {
   if(array[2]===array[4] && array[2]===array[6] && array[2]!==""){
     return {
       haVencedor:true,
-      vencedor: array[0]
+      vencedor: array[2]
     }
   }
-  
+
   return {
     haVencedor:false,
     vencedor: ""

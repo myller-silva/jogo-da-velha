@@ -23,11 +23,16 @@ function App() {
   function aoClicarNaCelula() {
     setContador(contador+1);
   }
+  function reiniciar() {
+    window.location.reload();
+    // return false;
+  }
   
   return (
     <div className="app" >
+      {vencedor? <div className="cabecalho">"{ vencedor }" venceu!</div> : <></> }
       <Tabuleiro texto={texto} aoClicarNaCelula = { aoClicarNaCelula } />
-      {vencedor?<h3> { vencedor } venceu!</h3> : <></>}
+      <button className="botao" onClick={reiniciar}>reiniciar</button>
     </div>
   );
 }

@@ -65,6 +65,7 @@ body{
 }
 
 .botao{
+  color: black;
   box-shadow: 1em 1em 1em black;
   border-radius: .5em;
   font-family: Georgia, 'Times New Roman', Times, serif ;
